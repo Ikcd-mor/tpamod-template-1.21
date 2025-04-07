@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "tpamod",
+	"version": "${version}",
+	"name": "TpaMod",
+	"description": "玩家传送mod",
+	"authors": [
+		"Ikcd"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tpamod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ikcd.tpamod.TpaMod"
+		],
+		"fabric-datagen": [
+			"com.ikcd.tpamod.TpaModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tpamod.mixins.json"
+	],
+	"depends": {
+		"fabric-api": ">=0.99",
+		"minecraft": ">=1.21-"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
